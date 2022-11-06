@@ -1,10 +1,10 @@
 # PQMH
-Packaged Queued Message Handler
+Packed Queued Message Handler written in LabVIEW
 
 # Overview
 
 LabVIEW framework to build and deploy applications using
-Packaged Project Libraries (.lvlibp).
+Packed Project Libraries (PPLs).
 
 # Getting Started
 
@@ -13,7 +13,7 @@ Packaged Project Libraries (.lvlibp).
 - Run Main.exe
   - Create a Startup.ini file next to Main.exe to define the applications to load
 
-  
+![Main](/Support/Screenshots/Main.png)
 
 
 # Startup.ini
@@ -38,10 +38,11 @@ vi = Demo.lvlib:Demo.vi
 
 # Objective
 
-Large applications become unmanageable in LabVIEW. Packaged Queue Message Handler leverages 
-the Packed Project Libraries to have source/distribution ready modules that can be used for
-debugging in production while also reducing the build workflow overhead with traditional monolithic
-executables.
+Streamline large application development by:
+- Simplifying the LabVIEW development, debugging and deployment workflow
+- Minimal core framework libraries to support a module heirarchy design pattern
+- Execute multiple applications simultaneously
+- Minimal configuration management with run-time reconfigurability
 
 # Can & Cannots
 
