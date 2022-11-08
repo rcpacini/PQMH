@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="22308000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -12,7 +13,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Core.lvlib" Type="Library" URL="../../Core/Core.lvlib"/>
-		<Item Name="Main.lvlib" Type="Library" URL="../Main.lvlib"/>
+		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -58,42 +59,43 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Demo.vi" Type="VI" URL="../../Core/Functions/Demo.vi"/>
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Main" Type="EXE">
+			<Item Name="Debug" Type="EXE">
 				<Property Name="App_INI_aliasGUID" Type="Str">{4DE8399F-2C95-4966-B775-A4C516875F53}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{63EF92DE-E6BB-4D64-B811-3B610A1E7CD5}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="App_useFFRTE" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{B323464C-C610-4586-95B2-B24494CA1959}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Main</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Debug</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/LabVIEW/PQMH</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/GitHub/PQMH/Builds/Debug</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4ED23166-5C32-4D6D-8C36-D5F4F230C8FF}</Property>
 				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
 				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Main.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Projects/LabVIEW/PQMH/NI_AB_PROJECTNAME.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">Debug.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Projects/GitHub/PQMH/Builds/Debug/Debug.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Projects/LabVIEW/PQMH/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Projects/GitHub/PQMH/Builds/Debug/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_cmdLineArgs" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{318FB93E-B4EF-4BEE-A7B8-ACBD58CAB16F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{656F2C42-BBBB-4EA0-B480-07FD1DC9F456}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.lvlib/Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
@@ -102,12 +104,54 @@
 				<Property Name="Source[2].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_companyName" Type="Str">Ryan Pacini</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Debug</Property>
+				<Property Name="TgtF_internalName" Type="Str">Debug</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 Ryan Pacini</Property>
+				<Property Name="TgtF_productName" Type="Str">Debug</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{1C4ACDBD-E22B-454C-A9C2-AB991366AAAB}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Debug.exe</Property>
+			</Item>
+			<Item Name="Main" Type="EXE">
+				<Property Name="App_INI_aliasGUID" Type="Str">{0DDAB311-AB2C-4627-AA6C-6D1262C6B193}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{8C806B54-22A1-4565-8EE9-C9A7C8D5B864}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{A0C1A2A0-62CF-4FF5-AFEF-0D886BEE69C5}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Main</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Projects/GitHub/PQMH</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{A16D8A62-18DA-4F9B-BF80-19E32C740D49}</Property>
+				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
+				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Main.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Projects/GitHub/PQMH/NI_AB_PROJECTNAME.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Projects/GitHub/PQMH/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_cmdLineArgs" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{69A0AC9F-C614-4471-906B-B6D3DDD10272}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Ryan Pacini</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Main</Property>
 				<Property Name="TgtF_internalName" Type="Str">Main</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 Ryan Pacini</Property>
 				<Property Name="TgtF_productName" Type="Str">Main</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{1C4ACDBD-E22B-454C-A9C2-AB991366AAAB}</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{8DD15F66-E2EB-44E6-9AE1-16B965B5A6BE}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Main.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
 	</Item>

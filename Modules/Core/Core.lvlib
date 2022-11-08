@@ -33,27 +33,6 @@
 	<Property Name="SaveStatePeriod" Type="UInt">0</Property>
 	<Property Name="Serialized ACL" Type="Bin">)D#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
-	<Item Name="Controls" Type="Folder">
-		<Item Name="Module Instance.ctl" Type="VI" URL="../Controls/Module Instance.ctl"/>
-		<Item Name="Module.ctl" Type="VI" URL="../Controls/Module.ctl"/>
-	</Item>
-	<Item Name="Functions" Type="Folder">
-		<Item Name="Config Read.vi" Type="VI" URL="../Functions/Config Read.vi"/>
-		<Item Name="Demo.vi" Type="VI" URL="../Functions/Demo.vi"/>
-		<Item Name="Module Add.vi" Type="VI" URL="../Functions/Module Add.vi"/>
-		<Item Name="Module Get Instance.vi" Type="VI" URL="../Functions/Module Get Instance.vi"/>
-		<Item Name="Module Get.vi" Type="VI" URL="../Functions/Module Get.vi"/>
-		<Item Name="Module Launch.vi" Type="VI" URL="../Functions/Module Launch.vi"/>
-		<Item Name="Module List.vi" Type="VI" URL="../Functions/Module List.vi"/>
-		<Item Name="Module New.vi" Type="VI" URL="../Functions/Module New.vi"/>
-		<Item Name="Module Next ID.vi" Type="VI" URL="../Functions/Module Next ID.vi"/>
-		<Item Name="Module Obtain.vi" Type="VI" URL="../Functions/Module Obtain.vi"/>
-		<Item Name="Module Remove.vi" Type="VI" URL="../Functions/Module Remove.vi"/>
-		<Item Name="Module Set Instance.vi" Type="VI" URL="../Functions/Module Set Instance.vi"/>
-		<Item Name="Module TypeDef.vi" Type="VI" URL="../Functions/Module TypeDef.vi"/>
-		<Item Name="Resolve VI Path.vi" Type="VI" URL="../Functions/Resolve VI Path.vi"/>
-		<Item Name="Startup Path.vi" Type="VI" URL="../Functions/Startup Path.vi"/>
-	</Item>
-	<Item Name="Obtain.vi" Type="VI" URL="../Functions/Obtain.vi"/>
-	<Item Name="Release.vi" Type="VI" URL="../Functions/Release.vi"/>
+	<Item Name="Config.lvlib" Type="Library" URL="../Config/Config.lvlib"/>
+	<Item Name="Module.lvlib" Type="Library" URL="../Module/Module.lvlib"/>
 </Library>
